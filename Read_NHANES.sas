@@ -9,7 +9,7 @@ options msglevel=n;
     %let Suffix = %lowcase(%substr(&DS, %eval(%length(&DS)-1)));
     
     %if (&Prefix = p_) %then %do; filename &DS url "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/datafiles/&DS..xpt"; %end;
-    %else %if (&Suffix = _l) %then %do; filename &DS url "https://wwwn.cdc.gov/nchs/nchs/data/nhanes/public/2021/datafiles/&DS..xpt"; %end;
+    %else %if (&Suffix = _l) %then %do; filename &DS url "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/datafiles/&DS..xpt"; %end;
     %else %if (&Suffix = _j) %then %do; filename &DS url "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/datafiles/&DS..xpt"; %end;
     %else %if (&Suffix = _i) %then %do; filename &DS url "https://wwwn.cdc.gov/nchs/data/nhanes/public/2015/datafiles/&DS..xpt"; %end;
     %else %if (&Suffix = _h) %then %do; filename &DS url "https://wwwn.cdc.gov/nchs/data/nhanes/public/2013/datafiles/&DS..xpt"; %end;
