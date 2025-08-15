@@ -10,12 +10,12 @@ options msglevel=n;
 
     %if (&Prefix = p_) %then %let BeginYear = 2017;
    	%else %if (&Suffix = _s) %then %do;
-      %let Suffix = %lowcase(%substr(&DS, %eval(%length(&DS)-3)));
+	  %let Suffix = %lowcase(%substr(&DS, %eval(%length(&DS)-3)));
       %if (&Suffix = _d_s) %then %let BeginYear = 2005;
-  	  %else %if (&Suffix = _c_s) %then %let BeginYear = 2003;
-	    %else %if (&Suffix = _b_s) %then %let BeginYear = 2001;
+      %else %if (&Suffix = _c_s) %then %let BeginYear = 2003;
+      %else %if (&Suffix = _b_s) %then %let BeginYear = 2001;
       %else %let BeginYear = 1999;
-	  %end;
+    %end;
     %else %if (&Suffix = _l) %then %let BeginYear = 2021;
     %else %if (&Suffix = _j) %then %let BeginYear = 2017;
     %else %if (&Suffix = _i) %then %let BeginYear = 2015;
