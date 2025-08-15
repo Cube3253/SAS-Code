@@ -9,7 +9,7 @@ options msglevel=n;
     %let Suffix = %lowcase(%substr(&DS, %eval(%length(&DS)-1)));
 
     %if (&Prefix = p_) %then %let BeginYear = 2017;
-   	%else %if (&Suffix = _s) %then %do;
+    %else %if (&Suffix = _s) %then %do;
       %let Suffix = %lowcase(%substr(&DS, %eval(%length(&DS)-3)));
       %if (&Suffix = _d_s) %then %let BeginYear = 2005;
       %else %if (&Suffix = _c_s) %then %let BeginYear = 2003;
