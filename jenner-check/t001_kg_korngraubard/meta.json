@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_kg_korngraubard",
+  "source_file": "KG_macro.sas",
+  "source_blob_sha": "35b0566dec918f12d22f3c596dee9e276b59fe58",
+  "source_commit": "be2740844bef37eedf8e819cc00db487a76873b3",
+  "notes": "%calculate_KornGraubard_CIs computes Korn-Graubard (modified Clopper-Pearson) confidence intervals for complex-survey proportions and applies NCHS data-presentation suppression flags. The repo ships only the macro definition; this bundle adds a small caller that builds a 6-row mock SUDAAN Proc Descript output dataset (percent, sepercent, nsum, atlev1, atlev2) and calls the macro with default options (df_adjust=yes/NHANES), then prints the resulting CIs and flags. Mock values are illustrative, not real NHANES estimates."
+}

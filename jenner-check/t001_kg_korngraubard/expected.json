@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-17T10:39:53Z",
+  "_captured_run_id": "r_90ac406cd2a545cca68cef58d56434e6",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Using macro calculate_KornGraubard_CIs version 2.0",
+    "NOTE: Wrote descript_out_KG (6 rows, 29 columns).",
+    "NOTE: PROC PRINT completed: 6 observations printed, 9 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
